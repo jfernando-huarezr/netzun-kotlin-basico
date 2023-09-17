@@ -17,11 +17,43 @@ fun main() {
 
     //STRINGS
 
-    var nombre = "Peter"
-    var apellido ="Parker"
+//    var nombre = "Peter"
+//    var apellido ="Parker"
+//
+//    println(nombre + " " + apellido)
+//    //String Interpolation
+//    println("$nombre $apellido")
 
-    println(nombre + " " + apellido)
-    //String Interpolation
-    println("$nombre $apellido")
+
+    //NUMEROS
+
+//    var numero1 = 4
+//    var numero2 = 6
+//
+//    println(numero1 + numero2)
+//    println("Multiplicacion ${numero1*numero2}")
+//    println("Los numeros son ${numero1} y ${numero2}")
+
+    //NULLABLES
+        //no puedo hacer esto
+//    var nombre : String
+//    nombre = null
+
+        //esto si puedo hacer! quiere decir "Puede ser String o Null"
+//    var nombreNull : String?
+//    nombreNull = null
+//    print(nombreNull)
+
+
+    //null safe
+    var name : String?
+    name = "Peter"
+    var longitud : Int? = name.length
+    println(longitud)
+    name = null
+    longitud = name?.length
+    println(longitud)
+
+    //si coloco name!! retiro esta caracteristica de Java
 
 }
