@@ -60,10 +60,41 @@ fun main() {
     //Cuando llegue un parametro null genera errores como se vio en la parte anterior
     //valida que una variable no sea nula, y si es nula asigna otro valor
 
-    var nombre: String?
-    nombre = null ?: "Usuario"
+//    var nombre: String?
+//    nombre = null ?: "Usuario"
+//
+//    var longitud: Int? = nombre?.length ?: 0
+//    println("Hola ${nombre} tu nombre tiene ${longitud} letras")
 
-    var longitud: Int? = nombre?.length ?: 0
-    println("Hola ${nombre} tu nombre tiene ${longitud} letras")
+    //***INGRESAR DATOS: Con la funcion readLine()
+//    println("Ingrese un dato: ")
+//    var dato = readln()
+//    println("El dato es ${dato}")
+
+    //****EXPRESION WHEN : Reemplaza al Switch Case en Kotlin
+//    println("Ingrese 1 o 2")
+//    var x = readln().toInt()
+//    when (x) {
+//        1 -> println("numero es 1")
+//        2 -> println("numero es 2")
+//        else -> {
+//            println("es un numero diferente a 1 o 2")
+//        }
+//    }
+
+    //*****RANGOS Y PROGRESIONES
+    var num = 25
+    if (num in 5..20) {
+        println("El numero se encuentra entre 5 y 20")
+    }
+    else {
+        println("El numero esta fuera del rango")
+    }
+
+    when (num) {
+        in 5 .. 20 -> println("numero en el rango con when")
+        in 21 .. 29 -> println("numero entre 21 y 29 con when")
+        in 30 .. 40 -> println("numero entre 30 y 40 con when")
+    }
 
 }
