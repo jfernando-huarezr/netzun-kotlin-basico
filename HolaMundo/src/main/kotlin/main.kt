@@ -83,18 +83,56 @@ fun main() {
 //    }
 
     //*****RANGOS Y PROGRESIONES
-    var num = 25
-    if (num in 5..20) {
-        println("El numero se encuentra entre 5 y 20")
-    }
-    else {
-        println("El numero esta fuera del rango")
-    }
+//    var num = 25
+//    if (num in 5..20) {
+//        println("El numero se encuentra entre 5 y 20")
+//    }
+//    else {
+//        println("El numero esta fuera del rango")
+//    }
+//
+//    when (num) {
+//        in 5 .. 20 -> println("numero en el rango con when")
+//        in 21 .. 29 -> println("numero entre 21 y 29 con when")
+//        in 30 .. 40 -> println("numero entre 30 y 40 con when")
+//    }
 
-    when (num) {
-        in 5 .. 20 -> println("numero en el rango con when")
-        in 21 .. 29 -> println("numero entre 21 y 29 con when")
-        in 30 .. 40 -> println("numero entre 30 y 40 con when")
-    }
+
+    //********COLECCIONES: Lists, Sets y Maps. Por defecto son inmutables
+    //**LISTAS
+
+    //listOf(value1, value2, value3, value4...etc)
+    //var/val listName = listOf(value1, value2, value3)
+    //listOf() no puede es modificable. Habria que usar mutableListOf()
+
+//    var paises = listOf("Peru", "Ecuador", "Marruecos", "Brasil")
+//    println(paises)
+//    println(paises[0])
+
+
+    //****SETS
+    //Coleccion desordenada de elementos unicos. Se filtra cualquier duplicado
+    //al igual que listOf, no es modificable. Se tiene que usar mutableSetOf()
+    //no funciona con corchetes. Se usa el metodo elementAt(index)
+    //no podemos editar un elemento. Podemos eliminar o agregar.
+
+//    var numeros = mutableSetOf(1,2,3,4,5,5,6,7,8,8,9)
+//    println(numeros)
+//    println(numeros.elementAt(0))
+//
+//    numeros.remove(1)
+//    numeros.add(1)
+//    println(numeros)
+
+    //***MAPS o DICTIONARYS : Par clave , valor. Clave es unica, valor se puede repetir. Filtra las claves repetidas
+    //el key NO se puede modificar
+
+    var mapita = mutableMapOf("nombre" to "Fernando", "apellido" to "Huarez", "edad" to 32, "estatura" to 180)
+    println(mapita)
+    println(mapita.keys)
+    println(mapita.values)
+    mapita["nombre"] = "Jose"
+    println(mapita["nombre"])
+
 
 }
