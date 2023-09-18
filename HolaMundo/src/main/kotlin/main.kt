@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main() {
 
     // var-val NombreVariable : TipoVariable = Valor
@@ -137,9 +139,65 @@ fun main() {
     //***ESTRUCTURAS REPETITITAS
 
     //*FOR
-    for (i in 1..4) {
-        println("Escribiendo ${i}")
-    }
+//    for (i in 1..4) {
+//        println("Escribiendo ${i}")
+//    }
 
+    //**********CLASES
+
+    //class Nombre { //Cuerpo de la clase }
+
+//    class Persona {
+//        val nombre = "Fernando"
+//        val apellido = "Huarez"
+//        val edad = 32
+//    }
+//
+//    val persona1 = Persona()
+//    println(persona1.apellido)
+//
+//    //constructores
+//
+//
+//    class Car(val year: Int, val color: String, val model: String) {
+//
+//        //bloque init: agregar codigo que se ejecuta cuando instanciamos una clase
+//        init{
+//            val antiguedad = 2023 - year
+//            println("La antiguedad del auto es de ${antiguedad} años")
+//        }
+//
+//        //member functions: serian los metodos de la clase
+//        fun encender() {
+//            println("El carro esta encendido")
+//        }
+//
+//        fun apagar() {
+//            println("El carro esta apagado")
+//        }
+//    }
+//
+//    val carro1 = Car(2012,"azul", "Ferrari")
+//    println(carro1.model)
+//    carro1.encender()
+//    carro1.apagar()
+
+    //******DATA CLASSES
+    //Solo tienen atributos. No deberia tener metodos o init
+//    val human = Person("Gian", 18)
+//    println(human.nombre)
+//    println(human.edad)
+
+    //****** HERENCIA
+    //clases Barco y Buque. la clase Buque hereda los metodos de la clase Barco
+
+//    val barco = Buque(2019,"Franky", "Azul")
+//
+//    barco.encender()
+
+    //***** INTERFACES
+
+    val tarjeta1 = MasterCard("1234567890")
+    tarjeta1.score(32)
 
 }
