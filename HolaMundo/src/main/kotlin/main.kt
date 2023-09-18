@@ -35,11 +35,11 @@ fun main() {
 //    println("Los numeros son ${numero1} y ${numero2}")
 
     //*****NULLABLES
-        //no puedo hacer esto
+    //no puedo hacer esto
 //    var nombre : String
 //    nombre = null
 
-        //esto si puedo hacer! quiere decir "Puede ser String o Null"
+    //esto si puedo hacer! quiere decir "Puede ser String o Null"
 //    var nombreNull : String?
 //    nombreNull = null
 //    print(nombreNull)
@@ -127,12 +127,19 @@ fun main() {
     //***MAPS o DICTIONARYS : Par clave , valor. Clave es unica, valor se puede repetir. Filtra las claves repetidas
     //el key NO se puede modificar
 
-    var mapita = mutableMapOf("nombre" to "Fernando", "apellido" to "Huarez", "edad" to 32, "estatura" to 180)
-    println(mapita)
-    println(mapita.keys)
-    println(mapita.values)
-    mapita["nombre"] = "Jose"
-    println(mapita["nombre"])
+//    var mapita = mutableMapOf("nombre" to "Fernando", "apellido" to "Huarez", "edad" to 32, "estatura" to 180)
+//    println(mapita)
+//    println(mapita.keys)
+//    println(mapita.values)
+//    mapita["nombre"] = "Jose"
+//    println(mapita["nombre"])
+
+    //***ESTRUCTURAS REPETITITAS
+
+    //*FOR
+    for (i in 1..4) {
+        println("Escribiendo ${i}")
+    }
 
 
 }
